@@ -8,25 +8,15 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import BottomBanner from "@/components/BottomBanner";
 import {
     Users,
-    GraduationCap,
     ShieldCheck,
     School,
-    ArrowRight,
     LogIn,
-    UserPlus,
     Lock
 } from "lucide-react";
 
 const GetStartedPage = () => {
     const portals = [
-        {
-            id: "student",
-            title: "Student / Scout Portal",
-            icon: GraduationCap,
-            desc: "Access your digital logbook, track advancement, and view test card progress.",
-            link: "#", // Placeholder for actual login URL
-            color: "orange"
-        },
+
         {
             id: "trainer",
             title: "Trainer / Leader Portal",
@@ -83,7 +73,7 @@ const GetStartedPage = () => {
 
                 {/* Portals Grid */}
                 <div className="max-w-[1500px] mx-auto px-6 -mt-12 relative z-20 pb-24">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                         {portals.map((portal) => (
                             <div key={portal.id} className="bg-white p-8 border border-slate-100 shadow-xl shadow-slate-900/5 group hover:-translate-y-1 transition-transform duration-300 flex flex-col">
                                 <div className={`w-14 h-14 ${portal.color === 'orange' ? 'bg-orange-50 text-orange-600' : 'bg-blue-50 text-[#000080]'} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500`}>
@@ -106,64 +96,8 @@ const GetStartedPage = () => {
                         ))}
                     </div>
                 </div>
-
-                {/* Registration Section */}
-                <section className="bg-slate-50 border-t border-slate-200 py-24">
-                    <div className="max-w-[1500px] mx-auto px-6">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                            <div>
-                                <div className="flex items-center gap-3 mb-6 text-orange-600">
-                                    <UserPlus className="w-6 h-6" />
-                                    <span className="text-xs font-black uppercase tracking-widest">New Registration</span>
-                                </div>
-                                <h2 className="text-4xl font-[1000] text-[#000080] tracking-tighter mb-6 uppercase">
-                                    Join the Movement
-                                </h2>
-                                <p className="text-gray-600 text-lg font-medium leading-relaxed mb-8 max-w-xl">
-                                    Not yet a member? Schools and individual units can register with the State Headquarters to obtain their official charter and start their scouting journey.
-                                </p>
-                                <ul className="space-y-4 mb-10">
-                                    {[
-                                        "Official Unit Charter & Recognition",
-                                        "Access to National Training Events",
-                                        "Digital Advancement Tracking",
-                                        "Government Recognized Certification"
-                                    ].map((item, i) => (
-                                        <li key={i} className="flex items-center gap-3">
-                                            <div className="w-1.5 h-1.5 bg-orange-600 rotate-45" />
-                                            <span className="text-sm font-bold text-slate-700">{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                                <div className="flex flex-wrap gap-4">
-                                    <Link
-                                        href="/resources"
-                                        className="px-8 py-4 bg-[#000080] text-white font-black uppercase text-xs tracking-widest hover:bg-orange-600 transition-all flex items-center gap-2"
-                                    >
-                                        Download Forms <ArrowRight className="w-4 h-4" />
-                                    </Link>
-                                    <Link
-                                        href="/contact"
-                                        className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-black uppercase text-xs tracking-widest hover:border-[#000080] hover:text-[#000080] transition-all"
-                                    >
-                                        Contact Support
-                                    </Link>
-                                </div>
-                            </div>
-
-                            {/* Visual Side */}
-                            <div className="relative h-[500px] lg:h-[600px] w-full bg-slate-200 overflow-hidden shadow-2xl skew-y-3 lg:skew-y-0 lg:-skew-x-3 border-4 border-white">
-                                <img
-                                    src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1000"
-                                    alt="Scouts Team"
-                                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105"
-                                />
-                                <div className="absolute inset-0 bg-[#000080]/20 mix-blend-multiply pointer-events-none" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </main>
+
 
             <BottomBanner />
 
@@ -171,7 +105,7 @@ const GetStartedPage = () => {
                 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
                 :root { font-family: 'Inter', sans-serif; }
             `}</style>
-        </div>
+        </div >
     );
 };
 
