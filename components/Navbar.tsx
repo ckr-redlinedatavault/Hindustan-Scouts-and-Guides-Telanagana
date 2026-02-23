@@ -12,23 +12,23 @@ const Navbar = () => {
         <nav className="w-full z-[100] sticky top-0 shadow-sm">
             {/* TIER 1: BRANDING & ACTIONS */}
             <div className="bg-white border-b border-gray-100">
-                <div className="max-w-[1500px] mx-auto px-6 lg:px-12 flex items-center justify-between h-24 lg:h-32">
+                <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between h-20 md:h-24 lg:h-32">
 
                     {/* --- LEFT: BRANDING --- */}
-                    <Link href="/" className="flex items-center gap-5 lg:gap-7 shrink-0 group">
+                    <Link href="/" className="flex items-center gap-3 md:gap-5 lg:gap-7 shrink-0 group min-w-0">
                         {/* Main Logo - Full Color */}
                         <img
                             src="https://res.cloudinary.com/dsqqrpzfl/image/upload/v1770199908/1769454781522_pgepvr.png"
                             alt="HSGA Logo"
-                            className="h-16 md:h-24 lg:h-[110px] w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                            className="h-12 md:h-24 lg:h-[110px] w-auto object-contain transition-transform duration-500 group-hover:scale-105"
                         />
 
                         {/* Single-line Header Text */}
-                        <div className="flex flex-col justify-center">
-                            <h1 className="text-lg md:text-xl lg:text-[24px] xl:text-[28px] font-black text-slate-900 leading-none tracking-tighter whitespace-nowrap">
+                        <div className="flex flex-col justify-center min-w-0 overflow-hidden">
+                            <h1 className="text-[10px] sm:text-lg md:text-xl lg:text-[24px] xl:text-[28px] font-black text-slate-900 leading-[1.1] tracking-tight sm:tracking-tighter uppercase sm:whitespace-nowrap whitespace-normal max-w-[180px] sm:max-w-none">
                                 Hindustan Scouts and Guides Association
                             </h1>
-                            <div className="flex items-center gap-2 mt-2">
+                            <div className="flex items-center gap-2 mt-1 sm:mt-2">
                                 <span className="w-4 h-[1px] bg-orange-600 hidden md:block"></span>
                                 <span className="text-orange-600 font-normal text-sm tracking-tight">
                                     Telangana State
@@ -90,10 +90,10 @@ const Navbar = () => {
 
                         {/* Mobile Toggle */}
                         <button
-                            className="lg:hidden p-2 text-slate-900 hover:bg-slate-50 transition-colors"
+                            className="lg:hidden p-2 -mr-2 text-slate-900 hover:bg-slate-50 transition-colors"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         >
-                            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                            {isMobileMenuOpen ? <X size={24} className="md:w-7 md:h-7" /> : <Menu size={24} className="md:w-7 md:h-7" />}
                         </button>
                     </div>
                 </div>
@@ -103,18 +103,18 @@ const Navbar = () => {
             <SubNavbar />
 
             {/* MOBILE MENU */}
-            <div className={`lg:hidden fixed inset-0 top-24 z-[90] bg-white transition-transform duration-500 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
-                <div className="p-8 flex flex-col h-full">
-                    <div className="space-y-6">
+            <div className={`lg:hidden fixed inset-0 top-20 md:top-24 z-[90] bg-white transition-transform duration-500 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+                <div className="p-6 sm:p-8 flex flex-col h-full overflow-y-auto">
+                    <div className="space-y-4 sm:space-y-6">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="flex items-center justify-between text-3xl font-black text-slate-900 tracking-tighter"
+                                className="flex items-center justify-between text-2xl sm:text-3xl font-black text-slate-900 tracking-tighter"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 {link.name}
-                                <ArrowRight className="text-orange-600 w-6 h-6" />
+                                <ArrowRight className="text-orange-600 w-5 h-5 sm:w-6 sm:h-6" />
                             </Link>
                         ))}
                     </div>
