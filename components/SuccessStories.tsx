@@ -41,7 +41,6 @@ const SuccessStories = () => {
         <section id="success-stories" className="py-16 lg:py-24 bg-white overflow-hidden border-t border-gray-50">
             <div className="max-w-[1500px] mx-auto px-6 lg:px-12 mb-12">
 
-                {/* Brand Marker - Sentence Case */}
                 <div className="flex items-center gap-3 mb-6">
                     <span className="w-8 h-[1.5px] bg-orange-600"></span>
                     <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400">
@@ -49,7 +48,6 @@ const SuccessStories = () => {
                     </span>
                 </div>
 
-                {/* Heading - Elite Style */}
                 <h2 className="text-3xl md:text-4xl lg:text-[42px] font-black text-slate-900 leading-[1.1] tracking-tighter mb-4">
                     Voices of <span className="text-[#000080]">Excellence</span>
                 </h2>
@@ -60,19 +58,15 @@ const SuccessStories = () => {
             </div>
 
             <div className="flex flex-col gap-6 relative group">
-                {/* Row 1: Moving Left */}
                 <div className="flex overflow-x-hidden">
                     <div className="flex animate-marquee whitespace-nowrap py-4">
                         {marqueeItems.map((item, idx) => (
                             <div key={`row1-${idx}`} className="inline-block px-4">
-                                {/* Solid Architectural Card */}
                                 <div className="w-[380px] md:w-[450px] h-[180px] flex bg-white border border-gray-100 shadow-sm transition-all duration-500 relative group/card">
-                                    {/* Image - Full Color */}
                                     <div className="w-[140px] h-full flex-shrink-0 bg-gray-50 overflow-hidden">
                                         <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
                                     </div>
 
-                                    {/* Content Block */}
                                     <div className="flex-grow p-6 flex flex-col justify-between overflow-hidden">
                                         <div className="whitespace-normal">
                                             <div className="flex items-center gap-2 mb-3">
@@ -89,7 +83,6 @@ const SuccessStories = () => {
                                         </div>
                                     </div>
 
-                                    {/* Brand Signature - Orange Right Bar */}
                                     <div className="absolute top-0 right-0 w-[4px] h-full bg-orange-600" />
                                 </div>
                             </div>
@@ -97,7 +90,6 @@ const SuccessStories = () => {
                     </div>
                 </div>
 
-                {/* Row 2: Moving Right */}
                 <div className="flex overflow-x-hidden">
                     <div className="flex animate-marquee-reverse whitespace-nowrap py-4">
                         {marqueeItems.map((item, idx) => (
@@ -128,7 +120,6 @@ const SuccessStories = () => {
                     </div>
                 </div>
 
-                {/* Modern Fade Overlays */}
                 <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
                 <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none" />
             </div>
