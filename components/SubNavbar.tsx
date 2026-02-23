@@ -39,7 +39,6 @@ const SubNavbar = () => {
         <div className="hidden lg:block bg-[#1b4332] border-b border-green-900/50 shadow-sm">
             <div className="max-w-[1500px] mx-auto px-6 lg:px-12 h-12 flex items-center justify-between">
 
-                {/* Navigation Links */}
                 <div className="flex items-center gap-1 h-full">
                     {navLinks.map((link) => (
                         <div
@@ -65,7 +64,6 @@ const SubNavbar = () => {
                                 )}
                             </Link>
 
-                            {/* MEGA DROPDOWN - Solid Panel Style */}
                             {link.dropdown && (
                                 <div
                                     className={`absolute top-full left-0 w-[480px] pt-0 transition-all duration-300 z-[120] ${openDropdown === link.name
@@ -74,7 +72,6 @@ const SubNavbar = () => {
                                         }`}
                                 >
                                     <div className="bg-white border border-gray-100 shadow-[0_20px_40px_rgba(0,0,0,0.15)] overflow-hidden">
-                                        {/* Orange Top Accent */}
                                         <div className="h-1 w-full bg-orange-600" />
 
                                         <div className="p-4 grid grid-cols-1">
@@ -98,7 +95,6 @@ const SubNavbar = () => {
                                                         </div>
                                                     </div>
 
-                                                    {/* Slant Arrow Transition */}
                                                     <ArrowUpRight
                                                         className="w-4 h-4 text-orange-600 opacity-0 -translate-y-1 translate-x-1 group-hover/item:opacity-100 group-hover/item:translate-y-0 group-hover/item:translate-x-0 transition-all duration-300"
                                                     />
@@ -111,8 +107,6 @@ const SubNavbar = () => {
                         </div>
                     ))}
                 </div>
-
-             
 
             </div>
         </div>
