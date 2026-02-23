@@ -41,16 +41,14 @@ const SimilarOrganisations = () => {
             <div className="max-w-[1500px] mx-auto px-6">
                 <div className="flex flex-col md:flex-row items-center justify-start gap-8 md:gap-12 lg:gap-16">
 
-                    {/* Compact Side Heading - Perfectly Centered on Mobile, Right-Bordered on Desktop */}
                     <div className="shrink-0 text-center md:text-left border-b-2 md:border-b-0 md:border-r border-gray-200 pb-4 md:pb-0 md:pr-10 lg:pr-14">
                         <h3 className="text-[#000080] font-black text-[10px] md:text-[11px] uppercase tracking-[0.3em] leading-relaxed">
-                            Affiliated & <br className="hidden md:block" /> 
-                            Similar <br className="hidden md:block" /> 
+                            Affiliated & <br className="hidden md:block" />
+                            Similar <br className="hidden md:block" />
                             Bodies
                         </h3>
                     </div>
 
-                    {/* Logos Container - items-center ensures all logos share the same horizontal centerline */}
                     <div className="flex-1 flex flex-row flex-wrap items-center justify-center md:justify-start gap-x-10 gap-y-8 md:gap-x-12 lg:gap-x-16">
                         {organisations.map((org, index) => (
                             <a
@@ -64,7 +62,6 @@ const SimilarOrganisations = () => {
                                 <img
                                     src={org.logo}
                                     alt={org.alt}
-                                    
                                     className="h-12 md:h-14 lg:h-16 w-auto object-contain drop-shadow-sm"
                                 />
                             </a>
