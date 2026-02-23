@@ -10,20 +10,16 @@ const Navbar = () => {
 
     return (
         <nav className="w-full z-[100] sticky top-0 shadow-sm">
-            {/* TIER 1: BRANDING & ACTIONS */}
             <div className="bg-white border-b border-gray-100">
                 <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between h-20 md:h-24 lg:h-32">
 
-                    {/* --- LEFT: BRANDING --- */}
                     <Link href="/" className="flex items-center gap-3 md:gap-5 lg:gap-7 shrink-0 group min-w-0">
-                        {/* Main Logo - Full Color */}
                         <img
                             src="https://res.cloudinary.com/dsqqrpzfl/image/upload/v1770199908/1769454781522_pgepvr.png"
                             alt="HSGA Logo"
                             className="h-12 md:h-24 lg:h-[110px] w-auto object-contain transition-transform duration-500 group-hover:scale-105"
                         />
 
-                        {/* Single-line Header Text */}
                         <div className="flex flex-col justify-center min-w-0 overflow-hidden">
                             <h1 className="text-[10px] sm:text-lg md:text-xl lg:text-[24px] xl:text-[28px] font-black text-slate-900 leading-[1.1] tracking-tight sm:tracking-tighter uppercase sm:whitespace-nowrap whitespace-normal max-w-[180px] sm:max-w-none">
                                 Hindustan Scouts and Guides Association
@@ -37,13 +33,10 @@ const Navbar = () => {
                         </div>
                     </Link>
 
-                    {/* --- RIGHT: ACTIONS & AFFILIATION --- */}
                     <div className="flex items-center gap-6 xl:gap-10">
 
-                        {/* Affiliation & Recognition Block - Architectural Layout */}
                         <div className="hidden lg:flex items-center gap-6 border-r border-gray-100 pr-8 xl:pr-10 h-20">
                             <div className="text-right flex flex-col justify-center">
-                                {/* Government Recognition */}
                                 <div className="mb-2">
                                     <p className="text-[9px] font-black uppercase tracking-[0.1em] text-[#000080] leading-none">Recognized by Govt. of India</p>
                                     <p className="text-[10px] font-bold text-gray-400 mt-1 leading-none">
@@ -51,7 +44,6 @@ const Navbar = () => {
                                     </p>
                                 </div>
 
-                                {/* International Affiliation - Bold Look */}
                                 <div>
                                     <p className="text-[8px] font-black uppercase tracking-[0.2em] text-orange-600 leading-none">Affiliated to</p>
                                     <p className="text-[11px] font-black text-slate-900 leading-tight mt-1">
@@ -61,7 +53,6 @@ const Navbar = () => {
                                 </div>
                             </div>
 
-                            {/* WFIS Logo - Full Color */}
                             <img
                                 src="https://res.cloudinary.com/dsqqrpzfl/image/upload/v1770199490/Screenshot_2026-02-04_at_15.31.47_srjmx2.png"
                                 alt="WFIS Germany Logo"
@@ -69,9 +60,7 @@ const Navbar = () => {
                             />
                         </div>
 
-                        {/* Solid CTA Buttons */}
                         <div className="hidden md:flex items-center gap-4">
-                            {/* Get Started - Solid Black */}
                             <Link
                                 href="/get-started"
                                 className="px-6 py-3.5 bg-slate-900 text-white text-[10px] font-bold uppercase tracking-widest hover:bg-orange-600 transition-all shadow-lg"
@@ -79,7 +68,6 @@ const Navbar = () => {
                                 Get Started
                             </Link>
 
-                            {/* Join Now - Solid Navy */}
                             <Link
                                 href="https://hushsga-final.vercel.app/register"
                                 className="px-7 py-3.5 bg-[#000080] text-white text-[10px] font-bold uppercase tracking-widest hover:bg-orange-600 transition-all shadow-lg shadow-blue-900/10"
@@ -88,7 +76,6 @@ const Navbar = () => {
                             </Link>
                         </div>
 
-                        {/* Mobile Toggle */}
                         <button
                             className="lg:hidden p-2 -mr-2 text-slate-900 hover:bg-slate-50 transition-colors"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -99,10 +86,8 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* TIER 2: NAVIGATION (Deep Scouting Green) */}
             <SubNavbar />
 
-            {/* MOBILE MENU */}
             <div className={`lg:hidden fixed inset-0 top-20 md:top-24 z-[90] bg-white transition-transform duration-500 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
                 <div className="p-6 sm:p-8 flex flex-col h-full overflow-y-auto">
                     <div className="space-y-4 sm:space-y-6">
