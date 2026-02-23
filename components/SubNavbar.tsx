@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import {
     ChevronDown,
-    ArrowUpRight
+    ArrowUpRight,
+    LogIn
 } from "lucide-react";
 
 export const navLinks = [
@@ -107,6 +108,16 @@ const SubNavbar = () => {
                         </div>
                     ))}
                 </div>
+
+                <a
+                    href="https://hindustan-unified-systems.vercel.app/doc/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-1.5 text-[12px] font-bold tracking-tight bg-white text-[#1b4332] hover:bg-white/85 transition-all duration-300 rounded-sm group"
+                >
+                    <LogIn size={13} className="transition-transform duration-300 group-hover:translate-x-0.5" />
+                    Doc Login
+                </a>
 
             </div>
         </div>
