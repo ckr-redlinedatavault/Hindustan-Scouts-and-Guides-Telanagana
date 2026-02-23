@@ -30,11 +30,9 @@ const MissionVision = () => {
     ];
 
     return (
-        // Reduced vertical padding (py-12 lg:py-16)
         <section className="py-12 lg:py-16 bg-white border-b border-gray-100">
             <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
-                
-                {/* Section Header - Perfectly Aligned */}
+
                 <div className="flex flex-col items-start mb-10">
                     <div className="flex items-center gap-3 mb-3">
                         <span className="w-8 h-[1.5px] bg-orange-600"></span>
@@ -47,35 +45,29 @@ const MissionVision = () => {
                     </h2>
                 </div>
 
-                {/* Grid Container - Clean Hairline Borders */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 border-t border-l border-gray-100">
                     {items.map((item, index) => (
                         <div
                             key={index}
                             className="group relative flex flex-col bg-white border-r border-b border-gray-100 transition-all duration-500"
                         >
-                            {/* Reduced Internal Padding (p-8 lg:p-10) */}
                             <div className="p-8 lg:p-10 flex flex-col h-full">
-                                
-                                {/* Top Meta Tag */}
+
                                 <div className="flex items-center gap-2 mb-6">
                                     <span className="text-[#000080] font-black text-[11px] tracking-widest">{item.number}</span>
                                     <span className="w-4 h-[1px] bg-gray-200"></span>
                                     <span className="text-[9px] font-black uppercase tracking-widest text-orange-600">{item.label}</span>
                                 </div>
 
-                                {/* Image with Brand Accent - Flattened Aspect Ratio */}
                                 <div className="relative mb-6 bg-gray-100 overflow-hidden aspect-video">
                                     <img
                                         src={item.image}
                                         alt={item.title}
                                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                     />
-                                    {/* Solid Orange Side Accent */}
                                     <div className="absolute top-0 right-0 w-[3px] h-full bg-orange-600" />
                                 </div>
 
-                                {/* Typography - Tightened spacing */}
                                 <h3 className="text-xl font-black text-slate-900 mb-3 tracking-tighter uppercase">
                                     {item.title}
                                 </h3>
@@ -84,10 +76,9 @@ const MissionVision = () => {
                                     {item.description}
                                 </p>
 
-                                {/* Solid Button - Small & Aligned */}
                                 <div className="mt-auto">
-                                    <Link 
-                                        href="/about/mission-vision" 
+                                    <Link
+                                        href="/about/mission-vision"
                                         className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-50 text-slate-900 font-bold text-[9px] uppercase tracking-widest hover:bg-[#000080] hover:text-white transition-all group/btn border border-slate-100"
                                     >
                                         Details
@@ -96,7 +87,6 @@ const MissionVision = () => {
                                 </div>
                             </div>
 
-                            {/* Hover Bottom Border Interaction */}
                             <div className="absolute bottom-0 left-0 w-0 h-[3px] bg-orange-600 transition-all duration-500 group-hover:w-full" />
                         </div>
                     ))}
