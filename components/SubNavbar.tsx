@@ -112,7 +112,7 @@ const SubNavbar = () => {
                     ))}
                 </div>
 
-                {/* DOC LOGIN Button - removed as it leads to 404 */}
+             
 
             </div>
         </div>
