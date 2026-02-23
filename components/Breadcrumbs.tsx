@@ -24,7 +24,6 @@ const Breadcrumbs = () => {
                         const href = `/${pathSegments.slice(0, index + 1).join("/")}`;
                         const isLast = index === pathSegments.length - 1;
 
-                        // Capitalize and format segment
                         const name = segment
                             .replace(/-/g, " ")
                             .replace(/\b\w/g, (l) => l.toUpperCase());
