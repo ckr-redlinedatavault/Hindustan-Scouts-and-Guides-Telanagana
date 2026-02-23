@@ -1,7 +1,3 @@
-/**
- * Utility for managing browser cookies on the HSGA portal.
- */
-
 export const setCookie = (name: string, value: string, days: number = 7) => {
     const expires = new Date();
     expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -23,9 +19,6 @@ export const deleteCookie = (name: string) => {
     document.cookie = `${name}=; Max-Age=-99999999;path=/;`;
 };
 
-/**
- * Specifically for consent tracking
- */
 export const hasCookieConsent = () => {
     if (typeof window === 'undefined') return false;
     return localStorage.getItem('hsga_cookie_consent') === 'accepted' || getCookie('hsga_consent') === 'true';
