@@ -9,17 +9,13 @@ const About = () => {
     const imageUrl2 = "https://res.cloudinary.com/dq2suftps/image/upload/v1722516917/a_sp9mhe.jpg";
 
     return (
-        // Reduced vertical padding (py-10 lg:py-16)
         <section id="about" className="py-10 lg:py-16 bg-white overflow-hidden border-b border-gray-50">
             <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
 
-                    {/* LEFT SIDE: Visual Stack */}
                     <div className="lg:col-span-6 relative">
-                        {/* Solid Offset Decoration */}
                         <div className="absolute -bottom-4 -left-4 w-full h-full bg-slate-50 border border-slate-100 -z-10" />
 
-                        {/* Reduced gap between images (gap-5) */}
                         <div className="flex flex-col gap-5">
                             <div className="relative group bg-white border border-gray-100 p-1.5">
                                 <img
@@ -46,10 +42,8 @@ const About = () => {
                         </div>
                     </div>
 
-                    {/* RIGHT SIDE: Content Side */}
                     <div className="lg:col-span-6 flex flex-col items-start lg:sticky lg:top-10">
 
-                        {/* Reduced Margin (mb-4) */}
                         <div className="flex items-center gap-3 mb-4">
                             <span className="w-6 h-[1.5px] bg-orange-600"></span>
                             <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400">
@@ -57,13 +51,11 @@ const About = () => {
                             </span>
                         </div>
 
-                        {/* Reduced Heading Margin (mb-5) */}
                         <h2 className="text-2xl md:text-3xl lg:text-[38px] font-black text-slate-900 leading-[1.1] tracking-tighter mb-5">
                             Empowering Youth through <br />
                             <span className="text-[#000080]">Traditional Scouting</span>
                         </h2>
 
-                        {/* Reduced Body Spacing (mb-6) */}
                         <div className="space-y-4 text-gray-600 text-[14px] leading-relaxed mb-6">
                             <p className="font-medium">
                                 Scouting is a global movement dedicated to supporting young people in their
@@ -75,7 +67,6 @@ const About = () => {
                                 age groups, building character through traditional values and discipline.
                             </p>
 
-                            {/* Tighter Quote Block (py-4) */}
                             <div className="relative py-4 px-6 bg-slate-50 border-l-2 border-orange-600 mt-4">
                                 <Quote className="absolute top-3 right-3 w-6 h-6 text-slate-200" />
                                 <p className="text-slate-800 font-bold italic text-[14px] leading-relaxed relative z-10">
@@ -87,7 +78,6 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* Solid Buttons */}
                         <div className="flex flex-wrap items-center gap-3">
                             <Link href="/about"
                                 className="px-6 py-3 bg-[#000080] text-white font-bold text-[10px] tracking-widest uppercase transition-all hover:bg-orange-600 flex items-center gap-2">
