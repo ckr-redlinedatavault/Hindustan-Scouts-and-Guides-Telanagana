@@ -30,7 +30,7 @@ export const navLinks = [
             { name: "Prashiksham Yojana", href: "/prashiksham", desc: "Our standardized training methodology." },
             { name: "Resources & Docs", href: "/resources", desc: "Access official forms and circulars." },
             { name: "Image Gallery", href: "/gallery", desc: "Archives of past events and milestones." },
-            { name: "Public Notices", href: "/notices", desc: "Recent updates and announcements." }
+            { name: "Public Notices", href: "https://hindustan-unified-systems.vercel.app/documents", desc: "Recent updates and announcements." }
         ]
     },
     { name: "Blogs", href: "/blogs" },
@@ -57,7 +57,7 @@ const SubNavbar = () => {
                         >
                             <Link
                                 href={link.href}
-                                className={`px-5 h-full flex items-center gap-1.5 text-[13px] font-semibold uppercase tracking-wider transition-all duration-300 ${openDropdown === link.name
+                                className={`px-5 h-full flex items-center gap-1.5 text-[13px] font-semibold tracking-wider transition-all duration-300 ${openDropdown === link.name
                                     ? "text-orange-400 bg-black/20"
                                     : "text-white/90 hover:text-white"
                                     }`}
@@ -132,16 +132,27 @@ const SubNavbar = () => {
                     ))}
                 </div>
 
-                {/* Login Button */}
-                <a
-                    href="https://hindustan-unified-systems.vercel.app/doc/login"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-5 py-2 text-[12px] font-bold uppercase tracking-widest bg-white text-[#1b4332] hover:bg-white/90 transition-all duration-300 rounded-none shadow-md group"
-                >
-                    <LogIn size={14} className="group-hover:translate-x-0.5 transition-transform" />
-                    DOC Login
-                </a>
+                <div className="flex items-center gap-2">
+                    {/* Get Started Button */}
+                    <Link
+                        href="/get-started"
+                        className="flex items-center gap-2 px-6 py-2 text-[12px] font-extrabold tracking-widest bg-white text-[#1b4332] hover:bg-slate-100 transition-all duration-300 rounded-none shadow-md group"
+                    >
+                        Get started
+                        <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
+                    </Link>
+
+                    {/* DOC Login Button */}
+                    <a
+                        href="https://hindustan-unified-systems.vercel.app/doc/login"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-6 py-2 text-[12px] font-extrabold tracking-widest bg-yellow-400 text-[#1b4332] hover:bg-yellow-500 transition-all duration-300 rounded-none shadow-md group"
+                    >
+                        <LogIn size={14} className="group-hover:translate-x-0.5 transition-transform" />
+                        Doc login
+                    </a>
+                </div>
             </div>
         </div>
     );
