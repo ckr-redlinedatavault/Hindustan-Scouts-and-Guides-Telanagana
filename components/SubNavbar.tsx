@@ -150,7 +150,7 @@ const SubNavbar = () => {
                         className="flex items-center gap-2 px-6 py-2 text-[12px] font-extrabold tracking-widest bg-yellow-400 text-[#1b4332] hover:bg-yellow-500 transition-all duration-300 rounded-none shadow-md group"
                     >
                         <LogIn size={14} className="group-hover:translate-x-0.5 transition-transform" />
-                        Doc login
+                        DOC login
                     </a>
                 </div>
             </div>
