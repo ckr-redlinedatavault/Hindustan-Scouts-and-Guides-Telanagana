@@ -56,22 +56,29 @@ const StatsRibbon = () => {
 
     return (
         <section className="relative z-50 px-4 sm:px-12 lg:px-20 -mb-16 lg:-mb-20">
-            <div className="max-w-[1400px] mx-auto -mt-16 lg:-mt-20">
-                <div className="bg-[#0a0a0b] rounded-2xl overflow-hidden backdrop-blur-3xl border border-white/10">
-                    <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="max-w-[1500px] mx-auto -mt-16 lg:-mt-20 flex justify-end">
+                <div className="relative bg-[#000080] border-y border-r border-white/10 backdrop-blur-3xl 
+                    [clip-path:polygon(40px_0,100%_0,100%_100%,0_100%)] md:[clip-path:polygon(60px_0,100%_0,100%_100%,0_100%)] 
+                    w-full md:w-[85%] lg:w-[75%] shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+
+                    {/* Left edge shadow/accent for depth */}
+                    <div className="absolute left-0 top-0 h-full w-[60px] bg-gradient-to-r from-black/20 to-transparent pointer-events-none" />
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 pl-8 md:pl-16">
                         {stats.map((stat, index) => (
                             <div
                                 key={index}
-                                className="flex items-center gap-6 py-10 px-8 lg:px-12 transition-all duration-300 hover:bg-white/[0.02]"
+                                className={`flex items-center gap-6 py-8 px-6 lg:px-10 transition-all duration-300 hover:bg-white/[0.02] ${index !== stats.length - 1 ? "md:border-r border-white/5" : ""
+                                    }`}
                             >
-                                <div className="text-4xl lg:text-5xl font-bold text-white tracking-tighter shrink-0">
+                                <div className="text-3xl lg:text-4xl font-bold text-white tracking-tighter shrink-0">
                                     <CountUpNumber target={stat.value} />
                                 </div>
                                 <div className="flex flex-col justify-between h-full">
-                                    <p className="text-[13px] lg:text-[14px] font-medium text-slate-400 leading-snug">
+                                    <p className="text-[12px] lg:text-[13px] font-medium text-blue-100/70 leading-snug">
                                         {stat.label}
                                     </p>
-                                    <span className="text-[10px] font-mono text-slate-600 mt-2 block opacity-50 uppercase tracking-tighter">
+                                    <span className="text-[9px] font-mono text-white/30 mt-2 block uppercase tracking-tighter">
                                         {stat.id}
                                     </span>
                                 </div>
