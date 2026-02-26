@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <nav className="w-full z-[100] sticky top-0 shadow-md bg-white">
             <div className="border-b-2 border-slate-100">
-                <div className="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-24 md:h-28 lg:h-32">
+                <div className="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-20 md:h-24 lg:h-28">
 
                     {/* LEFT: Branding Section */}
                     <Link href="/" className="flex items-center gap-4 lg:gap-6 shrink-0 group h-full">
@@ -27,7 +27,7 @@ const Navbar = () => {
                         <img
                             src="https://res.cloudinary.com/dsqqrpzfl/image/upload/v1770199908/1769454781522_pgepvr.png"
                             alt="HSGA Logo"
-                            className="h-[85px] md:h-[105px] lg:h-[125px] w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                            className="h-[65px] md:h-[80px] lg:h-[95px] w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                         />
 
                         <div className="flex flex-col justify-center">
@@ -106,7 +106,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Overlay */}
             <div
-                className={`lg:hidden fixed inset-0 top-24 md:top-28 z-[90] bg-white transition-all duration-300 ${isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+                className={`lg:hidden fixed inset-0 top-20 md:top-24 z-[90] bg-white transition-all duration-300 ${isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
                     }`}
             >
                 <div className="p-8 flex flex-col h-full bg-slate-50">
