@@ -37,7 +37,7 @@ const Navbar = () => {
                             </h1>
                             <div className="flex items-center gap-3 mt-1.5">
                                 <span className="text-orange-600 font-black text-[10px] md:text-sm tracking-[0.25em] uppercase">
-                                    Telangana State Headquarters
+                                    Telangana State Portal
                                 </span>
                             </div>
                         </div>
