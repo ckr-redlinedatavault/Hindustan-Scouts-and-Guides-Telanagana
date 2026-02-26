@@ -67,7 +67,7 @@ const Hero = () => {
                 {/* RIGHT IMAGE SECTION */}
                 <div className="w-full lg:w-1/2 h-[400px] lg:h-full relative hidden lg:block">
                     <img
-                        src="https://res.cloudinary.com/dsqqrpzfl/image/upload/v1771838041/WhatsApp_Image_2026-02-22_at_12.39.49_hcj8ru.jpg"
+                        src="https://scontent.fbpm5-1.fna.fbcdn.net/v/t39.30808-6/485792573_1070589281777122_1943023866077957457_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=o5TGd6RBUUMQ7kNvwEkERlR&_nc_oc=AdnjoCsfjOqBArDo7o1MZv1kU2aFz0bUcKM78n5HmKcv-ax_IcoF9uTgBnxZlxKl7hU&_nc_zt=23&_nc_ht=scontent.fbpm5-1.fna&_nc_gid=WwQP8A5VM5qP37X2P1WMWw&oh=00_AfvZmNo2mZVsLDj7_A1ekDpvVFmS2Ds6SkONQt_VS6KRLQ&oe=69A5FF7C"
                         alt="HSGA Telangana Scouts"
                         className="w-full h-full object-cover"
                     />
