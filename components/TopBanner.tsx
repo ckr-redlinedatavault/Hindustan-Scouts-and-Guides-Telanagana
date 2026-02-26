@@ -47,7 +47,7 @@ const TopBanner = () => {
                         className="group flex items-center gap-2 text-[12px] sm:text-[13px] font-bold transition-all hover:text-white"
                     >
                         <span className="underline underline-offset-4 decoration-white/30 group-hover:decoration-white transition-all">
-                            Membership registration
+                            Membership Registration
                         </span>
                         <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                     </a>
