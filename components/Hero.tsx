@@ -1,10 +1,30 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronRight, ArrowRight, ChevronLeft } from "lucide-react";
 
 const Hero = () => {
+    const images = [
+        "https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772204710/Screenshot_2026-02-27_at_20.31.37_cmgeog.png",
+        "https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772206077/Screenshot_2026-02-27_at_20.57.08_qib3cv.png",
+        "https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772204692/WhatsApp_Image_2026-02-27_at_19.54.43_uze4oz.jpg",
+        "https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772204691/WhatsApp_Image_2026-02-27_at_19.54.42_u1c9sz.jpg",
+        "https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772206304/Screenshot_2026-02-27_at_21.01.21_bgxf3h.png"
+    ];
+
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentImageIndex((prev) => (prev + 1) % images.length);
+        }, 5000);
+        return () => clearInterval(timer);
+    }, [images.length]);
+
+    const nextImage = () => setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    const prevImage = () => setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+
     return (
         <section className="relative bg-white lg:h-[620px] overflow-hidden">
             {/* Very subtle background texture */}
@@ -64,24 +84,54 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* RIGHT IMAGE SECTION */}
-                <div className="w-full lg:w-1/2 h-[400px] lg:h-full relative hidden lg:block">
-                    <img
-                        src="https://scontent.fbpm5-1.fna.fbcdn.net/v/t39.30808-6/485792573_1070589281777122_1943023866077957457_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=o5TGd6RBUUMQ7kNvwEkERlR&_nc_oc=AdnjoCsfjOqBArDo7o1MZv1kU2aFz0bUcKM78n5HmKcv-ax_IcoF9uTgBnxZlxKl7hU&_nc_zt=23&_nc_ht=scontent.fbpm5-1.fna&_nc_gid=WwQP8A5VM5qP37X2P1WMWw&oh=00_AfvZmNo2mZVsLDj7_A1ekDpvVFmS2Ds6SkONQt_VS6KRLQ&oe=69A5FF7C"
-                        alt="HSGA Telangana Scouts"
-                        className="w-full h-full object-cover"
-                    />
-                    {/* Subtle Gradient Overlay for depth */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent pointer-events-none"></div>
-                </div>
+                {/* RIGHT IMAGE SECTION - SCROLLABLE CAROUSEL */}
+                <div className="w-full lg:w-1/2 h-[350px] lg:h-full relative overflow-hidden group">
+                    <div
+                        className="flex h-full w-full transition-transform duration-700 ease-in-out"
+                        style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+                    >
+                        {images.map((src, index) => (
+                            <div key={index} className="w-full h-full flex-shrink-0 relative">
+                                <img
+                                    src={src}
+                                    alt={`HSGA Telangana Scouts ${index + 1}`}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                        ))}
+                    </div>
 
-                {/* Mobile View Image */}
-                <div className="w-full h-[350px] relative lg:hidden">
-                    <img
-                        src="https://res.cloudinary.com/dsqqrpzfl/image/upload/v1771838041/WhatsApp_Image_2026-02-22_at_12.39.49_hcj8ru.jpg"
-                        alt="HSGA Telangana Scouts"
-                        className="w-full h-full object-cover"
-                    />
+                    {/* Subtle Gradient Overlay for depth */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent pointer-events-none hidden lg:block"></div>
+
+                    {/* Navigation Buttons */}
+                    <button
+                        onClick={prevImage}
+                        aria-label="Previous image"
+                        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/40 hover:bg-white/80 p-2 rounded-full backdrop-blur-sm text-[#000080] opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-sm"
+                    >
+                        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+                    </button>
+                    <button
+                        onClick={nextImage}
+                        aria-label="Next image"
+                        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/40 hover:bg-white/80 p-2 rounded-full backdrop-blur-sm text-[#000080] opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-sm"
+                    >
+                        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+                    </button>
+
+                    {/* Indicators */}
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
+                        {images.map((_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => setCurrentImageIndex(index)}
+                                aria-label={`Go to slide ${index + 1}`}
+                                className={`h-2 rounded-full transition-all duration-300 shadow-sm ${index === currentImageIndex ? "w-6 bg-orange-500" : "w-2 bg-white/60 hover:bg-white"
+                                    }`}
+                            />
+                        ))}
+                    </div>
                 </div>
 
             </div>
