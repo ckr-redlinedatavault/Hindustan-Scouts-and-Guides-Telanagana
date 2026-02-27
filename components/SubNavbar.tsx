@@ -35,7 +35,7 @@ export const navLinks = [
     },
     { name: "Blogs", href: "/blogs" },
     { name: "Careers", href: "/careers" },
-    { name: "Shop", href: "https://shop.hsgatelangana.com" },
+    { name: "Shop", href: "https://shop.hsgatelangana.com/" },
     { name: "Contact", href: "/contact" },
 ];
 
