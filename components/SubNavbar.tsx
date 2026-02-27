@@ -144,7 +144,7 @@ const SubNavbar = () => {
 
                     {/* DOC Login Button */}
                     <a
-                        href="https://hindustan-unified-systems.vercel.app/doc/login"
+                        href="https://hus.hsgatelangana.com/doc/login"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-6 py-2 text-[12px] font-extrabold tracking-widest bg-yellow-400 text-[#1b4332] hover:bg-yellow-500 transition-all duration-300 rounded-none shadow-md group"
