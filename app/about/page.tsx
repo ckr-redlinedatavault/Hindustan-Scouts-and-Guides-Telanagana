@@ -285,6 +285,16 @@ const AboutPage = () => {
                                 We are committed to the United Nations Sustainable Development Goals. Our activities
                                 are designed to mobilize youth towards the 2030 Agenda.
                             </p>
+
+                            <div className="mb-8 rounded-lg overflow-hidden border border-gray-100 shadow-sm">
+                                {/* Placeholder for the Cloudinary link */}
+                                <img
+                                    src="https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772201818/Screenshot_2026-02-27_at_19.46.49_qizjpd.png"
+                                    alt="UN Sustainable Development Goals"
+                                    className="w-full h-auto object-cover"
+                                />
+                            </div>
+
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {[
                                     { goal: "SDG 4", name: "Quality Education", color: "bg-red-600" },
