@@ -36,7 +36,7 @@ const Donation = () => {
 
                     <div className="flex flex-wrap items-center gap-6">
                         <Link
-                            href="https://hus.hsgatelangana.com/donate"
+                            href="https://hushsga-final.vercel.app/donate"
                             className="group flex items-center gap-3 bg-orange-500 text-white px-7 py-3 transition-all hover:bg-white hover:text-[#1b4332] shadow-lg shadow-black/10 rounded-sm"
                         >
                             <span className="font-bold text-[13px]">Support our mission</span>
@@ -44,7 +44,7 @@ const Donation = () => {
                         </Link>
 
                         <Link
-                            href="https://hus.hsgatelangana.com/membership"
+                            href="https://hushsga-final.vercel.app/contact"
                             className="group flex items-center gap-2 text-white/80 font-semibold text-[13px] border-b border-transparent hover:border-white/40 transition-all pb-0.5"
                         >
                             Become a partner

@@ -1,6 +1,8 @@
 import json
 
 def get_extracted_news():
+    # These items were extracted via browser analysis of hsgatelangana.com/blogs
+    # and hindustanscoutsandguidesassociation.com/notices/
     news_items = [
         {
             "id": 1,
@@ -8,7 +10,7 @@ def get_extracted_news():
             "date": "Feb 02, 2026",
             "category": "Official",
             "excerpt": "The state committee has been formally established with new leadership appointments to drive scouting initiatives across all districts of Telangana.",
-            "image": "https://hsgatelangana.com/assets/img/news/10_ixidnt.jpg"
+            "image": "https://hsgatelangana.com/assets/img/news/10_ixidnt.jpg" # Using real paths from the site
         },
         {
             "id": 2,

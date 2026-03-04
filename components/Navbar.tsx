@@ -37,7 +37,7 @@ const Navbar = () => {
                             </h1>
                             <div className="flex items-center gap-3 mt-1.5">
                                 <span className="text-orange-600 font-black text-[10px] md:text-sm tracking-[0.25em] uppercase">
-                                    Telangana State Portal
+                                    Telangana State Headquarters
                                 </span>
                             </div>
                         </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
                         {/* CTA Section */}
                         <div className="hidden md:flex items-center gap-4">
                             <Link
-                                href="https://hus.hsgatelangana.com/forms/student-admission"
+                                href="https://hushsga-final.vercel.app/register"
                                 className="px-8 py-4 bg-slate-950 text-white text-[12px] font-black uppercase tracking-widest hover:bg-orange-600 transition-all rounded-none shadow-xl shadow-slate-950/10"
                             >
                                 Join now
