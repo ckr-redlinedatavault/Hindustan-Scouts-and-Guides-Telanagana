@@ -23,7 +23,7 @@ const GetStartedPage = () => {
             title: "Trainer and Leader Portal",
             icon: Users,
             desc: "Access unit management tools, member advancement tracking, and official training curricula.",
-            link: "https://hushsga-final.vercel.app/trainer/login",
+            link: "https://hus.hsgatelangana.com/trainer/login",
             btnColor: "bg-[#000080]"
         },
         {
@@ -32,7 +32,7 @@ const GetStartedPage = () => {
             title: "School and Unit Login",
             icon: School,
             desc: "Register new scouting units, manage annual renewals, and coordinate with district authorities.",
-            link: "https://hushsga-final.vercel.app/insti/login",
+            link: "https://hus.hsgatelangana.com/insti/login",
             btnColor: "bg-[#000080]"
         },
         {
@@ -41,7 +41,7 @@ const GetStartedPage = () => {
             title: "District and State Admin",
             icon: ShieldCheck,
             desc: "Unified dashboard for commissioners and state officials to manage regional scouting operations.",
-            link: "https://hushsga-final.vercel.app/admin/login",
+            link: "https://hus.hsgatelangana.com/admin/login",
             btnColor: "bg-slate-800"
         }
     ];
