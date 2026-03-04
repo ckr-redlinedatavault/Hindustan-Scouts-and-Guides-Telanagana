@@ -27,7 +27,6 @@ const Hero = () => {
 
     return (
         <section className="relative bg-white lg:h-[620px] overflow-hidden">
-            {/* Very subtle background texture */}
             <div className="absolute inset-0 z-0 opacity-[0.02] pointer-events-none">
                 <svg width="100%" height="100%">
                     <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -39,10 +38,8 @@ const Hero = () => {
 
             <div className="relative z-10 flex flex-col lg:flex-row h-full w-full">
 
-                {/* LEFT CONTENT */}
                 <div className="flex-1 flex flex-col justify-center items-start px-6 sm:px-12 lg:px-24 py-16 lg:py-0">
 
-                    {/* Clean Typography Layout */}
                     <div className="relative mb-8">
                         <div className="flex items-center gap-3 mb-4">
                             <span className="w-8 h-[2px] bg-orange-600"></span>
@@ -84,7 +81,6 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* RIGHT IMAGE SECTION - SCROLLABLE CAROUSEL */}
                 <div className="w-full lg:w-1/2 h-[350px] lg:h-full relative overflow-hidden group">
                     <div
                         className="flex h-full w-full transition-transform duration-700 ease-in-out"
@@ -101,10 +97,8 @@ const Hero = () => {
                         ))}
                     </div>
 
-                    {/* Subtle Gradient Overlay for depth */}
                     <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent pointer-events-none hidden lg:block"></div>
 
-                    {/* Navigation Buttons */}
                     <button
                         onClick={prevImage}
                         aria-label="Previous image"
@@ -120,7 +114,6 @@ const Hero = () => {
                         <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
                     </button>
 
-                    {/* Indicators */}
                     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
                         {images.map((_, index) => (
                             <button

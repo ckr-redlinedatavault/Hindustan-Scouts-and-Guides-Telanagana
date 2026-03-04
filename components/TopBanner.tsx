@@ -4,19 +4,16 @@ import React from "react";
 import { ArrowRight, Info } from "lucide-react";
 
 const TopBanner = () => {
-    // Dynamically get the current year
     const currentYear = new Date().getFullYear();
 
     return (
         <div className="bg-[#d84315] text-white py-2.5 px-4 sm:px-8 relative z-[110] border-b border-white/10 shadow-sm">
-            {/* Subtle background pattern for a professional texture */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
                 style={{ backgroundImage: `radial-gradient(#fff 1px, transparent 0)`, backgroundSize: '20px 20px' }}
             />
 
             <div className="max-w-[1500px] mx-auto relative z-10 flex items-center justify-between gap-4">
 
-                {/* LEFT: Official Recognition Section */}
                 <div className="flex items-center gap-4 lg:gap-6 min-w-0">
                     <div className="flex items-center gap-2 px-2.5 py-1 bg-white/10 backdrop-blur-md border border-white/20 rounded-none">
                         <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse shrink-0" />
@@ -30,10 +27,8 @@ const TopBanner = () => {
                     </p>
                 </div>
 
-                {/* RIGHT: Dynamic Status and Link */}
                 <div className="flex items-center gap-4 sm:gap-8 shrink-0">
 
-                    {/* Dynamic Enrollment Status */}
                     <div className="hidden lg:flex items-center gap-2 text-[13px]">
                         <span className="text-white/70 font-medium">Status:</span>
                         <span className="bg-white text-[#d84315] px-2 py-0.5 rounded-none font-bold text-[12px]">
@@ -41,7 +36,6 @@ const TopBanner = () => {
                         </span>
                     </div>
 
-                    {/* Membership Link */}
                     <a
                         href="https://hushsga-final.vercel.app/membership"
                         className="group flex items-center gap-2 text-[12px] sm:text-[13px] font-bold transition-all hover:text-white"

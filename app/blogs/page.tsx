@@ -52,13 +52,11 @@ const BlogsPage = () => {
         }
     ];
 
-
     return (
         <div className="bg-white flex flex-col font-outfit text-slate-900 w-full relative">
             <Breadcrumbs />
 
             <div className="w-full">
-                {/* HERO SECTION */}
                 <div className="bg-[#000080] pt-14 pb-12 text-white relative overflow-hidden">
                     <div className="absolute inset-0 opacity-10 pointer-events-none">
                         <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: `radial-gradient(circle, #fff 0.8px, transparent 0.8px)`, backgroundSize: '24px 24px' }} />
@@ -80,7 +78,6 @@ const BlogsPage = () => {
                     </div>
                 </div>
 
-                {/* OFFICIAL BLOGS SECTION */}
                 <div className="max-w-[1500px] mx-auto px-6 py-14">
                     <div className="flex items-end justify-between mb-12">
                         <div>
@@ -158,7 +155,6 @@ const BlogsPage = () => {
                         ))}
                     </div>
 
-                    {/* ALIGNMENT PILLARS - SDG & NEP (Styled like Blog Cards) */}
                     <div className="mb-12">
                         <span className="text-orange-600 text-[10px] font-black uppercase tracking-[0.3em] mb-4 block">Our Commitment</span>
                         <h2 className="text-3xl font-[1000] text-[#000080] tracking-tight uppercase">National & Global Alignment</h2>
@@ -199,12 +195,9 @@ const BlogsPage = () => {
                             </div>
                         ))}
                     </div>
-
                 </div>
-
             </div>
 
-            {/* FULL BLOG OVERLAY - WIKI REDESIGN */}
             {selectedNews && (
                 <div className="fixed inset-0 z-[500] bg-slate-950/60 backdrop-blur-sm flex items-start justify-center p-0 md:p-12 overflow-y-auto transition-all duration-300"
                     onClick={() => setSelectedNews(null)}>
@@ -212,9 +205,7 @@ const BlogsPage = () => {
                     <div className="w-full max-w-5xl bg-white shadow-2xl relative animate-in fade-in zoom-in-95 duration-300 ease-out flex flex-col md:flex-row min-h-screen md:min-h-[auto]"
                         onClick={(e) => e.stopPropagation()}>
 
-                        {/* WIKI LEFT SIDE - MAIN CONTENT */}
                         <div className="flex-1 p-6 md:p-10 border-r border-slate-100">
-                            {/* BREADCRUMB STYLE HEADER */}
                             <div className="flex items-center gap-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 border-b border-slate-100 pb-2">
                                 <span>Blogs</span>
                                 <span>/</span>
@@ -225,7 +216,6 @@ const BlogsPage = () => {
                                 {selectedNews.title}
                             </h1>
 
-                            {/* WIKI TABLE OF CONTENTS (MINI) */}
                             <div className="bg-slate-50 border border-slate-200 p-4 mb-8 inline-block min-w-[240px]">
                                 <div className="text-[10px] font-black uppercase tracking-widest text-[#000080] mb-3 border-b border-slate-200 pb-1">Contents</div>
                                 <ul className="space-y-1.5">
@@ -237,7 +227,6 @@ const BlogsPage = () => {
                                 </ul>
                             </div>
 
-                            {/* MAIN ARTICLE BODY */}
                             <div className="text-slate-700 text-sm md:text-base leading-relaxed space-y-6 max-w-none">
                                 <p className="font-bold text-slate-900 border-l-4 border-orange-500 pl-6 italic bg-slate-50 py-4">
                                     {selectedNews.excerpt}
@@ -247,7 +236,6 @@ const BlogsPage = () => {
                                     {selectedNews.content}
                                 </p>
 
-                                {/* INLINE IMAGE 1 */}
                                 <div className="my-8 border border-slate-100 p-1">
                                     <img
                                         src="https://res.cloudinary.com/dq2suftps/image/upload/v1722516917/b_og8pcm.jpg"
@@ -264,7 +252,6 @@ const BlogsPage = () => {
                                     The implementation follows strict guidelines aligned with national standards for excellence. Every activity is documented and reviewed by the state headquarters to ensure maximum efficacy and adherence to the scout promise.
                                 </p>
 
-                                {/* INLINE IMAGE 2 */}
                                 <div className="my-8 border border-slate-100 p-1">
                                     <img
                                         src="https://res.cloudinary.com/dq2suftps/image/upload/v1722516922/i_mdzjev.jpg"
@@ -292,7 +279,6 @@ const BlogsPage = () => {
                             </div>
                         </div>
 
-                        {/* WIKI RIGHT SIDE - INFOBOX */}
                         <div className="w-full md:w-[320px] bg-white p-6 md:p-8 shrink-0">
                             <div className="border border-slate-200 p-1 shadow-sm">
                                 <div className="bg-slate-50 text-center py-3 border-b border-slate-200">
@@ -334,7 +320,6 @@ const BlogsPage = () => {
                             </div>
                         </div>
 
-                        {/* CLOSE BUTTON (DESKTOP FLOATING) */}
                         <button
                             onClick={() => setSelectedNews(null)}
                             className="absolute -top-4 -right-4 w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors shadow-xl z-50 hidden md:flex"
@@ -343,9 +328,8 @@ const BlogsPage = () => {
                         </button>
                     </div>
                 </div>
-            )
-            }
-        </div >
+            )}
+        </div>
     );
 };
 

@@ -46,7 +46,6 @@ const SubNavbar = () => {
         <div className="hidden lg:block bg-[#1b4332] border-b border-white/10 shadow-lg relative">
             <div className="max-w-[1500px] mx-auto px-6 lg:px-12 h-14 flex items-center justify-between">
 
-                {/* Navigation Links */}
                 <div className="flex items-center h-full">
                     {navLinks.map((link) => (
                         <div
@@ -72,7 +71,6 @@ const SubNavbar = () => {
                                 )}
                             </Link>
 
-                            {/* MEGA MENU DROPDOWN */}
                             {link.dropdown && (
                                 <div
                                     className={`absolute top-[56px] left-0 w-full flex justify-center transition-all duration-300 z-[120] ${openDropdown === link.name
@@ -82,7 +80,6 @@ const SubNavbar = () => {
                                 >
                                     <div className="w-[1000px] bg-white shadow-[0_20px_50px_rgba(0,0,0,0.3)] grid grid-cols-12 overflow-hidden rounded-b-md border border-gray-200">
 
-                                        {/* Left Side: Context Panel */}
                                         <div className="col-span-4 bg-slate-50 p-8 border-r border-gray-100">
                                             <div className="w-10 h-10 bg-[#1b4332] rounded-lg flex items-center justify-center mb-4">
                                                 <Info className="text-white" size={20} />
@@ -101,7 +98,6 @@ const SubNavbar = () => {
                                             </Link>
                                         </div>
 
-                                        {/* Right Side: Links Grid */}
                                         <div className="col-span-8 p-6 grid grid-cols-2 gap-2">
                                             {link.dropdown.map((item) => (
                                                 <Link
@@ -123,7 +119,6 @@ const SubNavbar = () => {
                                             ))}
                                         </div>
 
-                                        {/* Bottom Accent Bar */}
                                         <div className="col-span-12 h-1.5 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-400" />
                                     </div>
                                 </div>
@@ -133,7 +128,6 @@ const SubNavbar = () => {
                 </div>
 
                 <div className="flex items-center gap-2">
-                    {/* Get Started Button */}
                     <Link
                         href="/get-started"
                         className="flex items-center gap-2 px-6 py-2 text-[12px] font-extrabold tracking-widest bg-white text-[#1b4332] hover:bg-slate-100 transition-all duration-300 rounded-none shadow-md group"
@@ -142,7 +136,6 @@ const SubNavbar = () => {
                         <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
                     </Link>
 
-                    {/* DOC Login Button */}
                     <a
                         href="https://hus.hsgatelangana.com/doc/login"
                         target="_blank"

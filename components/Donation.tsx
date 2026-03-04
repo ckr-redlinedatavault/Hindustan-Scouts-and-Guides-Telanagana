@@ -7,17 +7,14 @@ import { Heart, ArrowRight } from "lucide-react";
 const Donation = () => {
     return (
         <section className="relative bg-[#1b4332] lg:h-[380px] w-full overflow-hidden border-y border-white/5">
-            {/* Subtle Texture for Depth */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
                 style={{ backgroundImage: `radial-gradient(#fff 1px, transparent 0)`, backgroundSize: '24px 24px' }}
             />
 
             <div className="flex flex-col lg:flex-row h-full w-full max-w-[1500px] mx-auto">
 
-                {/* LEFT: Content Section */}
                 <div className="flex-1 flex flex-col justify-center px-6 sm:px-12 lg:px-20 py-10 lg:py-0 z-20">
 
-                    {/* Minimal Badge */}
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 border border-white/10 rounded-full mb-5 w-fit">
                         <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></span>
                         <span className="text-white/90 text-[11px] font-semibold tracking-wide uppercase">Youth Empowerment Fund</span>
@@ -53,7 +50,6 @@ const Donation = () => {
                     </div>
                 </div>
 
-                {/* RIGHT: Image Section (Clean Split) */}
                 <div className="w-full lg:w-[42%] relative h-[250px] lg:h-full">
                     <img
                         src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop"
@@ -61,10 +57,8 @@ const Donation = () => {
                         className="w-full h-full object-cover grayscale-[10%]"
                     />
 
-                    {/* Soft gradient to blend content with image */}
                     <div className="absolute inset-0 bg-gradient-to-r from-[#1b4332] via-transparent to-transparent hidden lg:block w-32" />
 
-                    {/* Subtle Brand Overlay Tag */}
                     <div className="absolute bottom-6 right-6 bg-white/10 backdrop-blur-md px-4 py-2 border border-white/20">
                         <p className="text-white text-[10px] font-bold uppercase tracking-widest">HSGA Telangana Impact</p>
                     </div>

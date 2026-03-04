@@ -61,7 +61,6 @@ const StatsRibbon = () => {
                     [clip-path:polygon(40px_0,100%_0,100%_100%,0_100%)] md:[clip-path:polygon(60px_0,100%_0,100%_100%,0_100%)] 
                     w-full md:w-[85%] lg:w-[75%] shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
 
-                    {/* Left edge shadow/accent for depth */}
                     <div className="absolute left-0 top-0 h-full w-[60px] bg-gradient-to-r from-black/20 to-transparent pointer-events-none" />
 
                     <div className="grid grid-cols-1 md:grid-cols-3 pl-8 md:pl-16">

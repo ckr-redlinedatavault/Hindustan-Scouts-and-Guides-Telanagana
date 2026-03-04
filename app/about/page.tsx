@@ -196,7 +196,6 @@ const AboutPage = () => {
                 <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
                     <div className="flex flex-col lg:flex-row bg-slate-50 border border-gray-100 overflow-hidden shadow-sm">
 
-                        {/* LEFT: Profile Image */}
                         <div className="w-full lg:w-[380px] relative h-[450px] lg:h-auto shrink-0 transition-all duration-700 group">
                             <img
                                 src="https://res.cloudinary.com/dsqqrpzfl/image/upload/v1770199908/1769454781522_pgepvr.png"
@@ -209,7 +208,6 @@ const AboutPage = () => {
                             </div>
                         </div>
 
-                        {/* RIGHT: Content & Biography */}
                         <div className="flex-1 p-8 lg:p-16 flex flex-col justify-center">
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="w-8 h-[1.5px] bg-orange-600"></span>
@@ -249,7 +247,6 @@ const AboutPage = () => {
             <section className="py-16 bg-slate-50 border-y border-gray-100">
                 <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                        {/* NEP 2020 Alignment */}
                         <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="w-8 h-[1.5px] bg-[#000080]"></span>
@@ -274,7 +271,6 @@ const AboutPage = () => {
                             </div>
                         </div>
 
-                        {/* SDG 2030 Alignment */}
                         <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="w-8 h-[1.5px] bg-orange-600"></span>
@@ -287,7 +283,6 @@ const AboutPage = () => {
                             </p>
 
                             <div className="mb-8 rounded-lg overflow-hidden border border-gray-100 shadow-sm">
-                                {/* Placeholder for the Cloudinary link */}
                                 <img
                                     src="https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772201818/Screenshot_2026-02-27_at_19.46.49_qizjpd.png"
                                     alt="UN Sustainable Development Goals"

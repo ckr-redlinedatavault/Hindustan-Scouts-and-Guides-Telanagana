@@ -21,9 +21,7 @@ const Navbar = () => {
             <div className="border-b-2 border-slate-100">
                 <div className="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-20 md:h-24 lg:h-28">
 
-                    {/* LEFT: Branding Section */}
                     <Link href="/" className="flex items-center gap-4 lg:gap-6 shrink-0 group h-full">
-                        {/* Main Logo - Increased size to max height */}
                         <img
                             src="https://res.cloudinary.com/dsqqrpzfl/image/upload/v1770199908/1769454781522_pgepvr.png"
                             alt="HSGA Logo"
@@ -31,7 +29,6 @@ const Navbar = () => {
                         />
 
                         <div className="flex flex-col justify-center">
-                            {/* Single Line Brand Name - Bold Black Look */}
                             <h1 className="text-[11px] sm:text-base md:text-xl lg:text-[24px] font-black text-slate-950 tracking-tighter uppercase whitespace-nowrap leading-none">
                                 Hindustan Scouts and Guides Association
                             </h1>
@@ -43,10 +40,8 @@ const Navbar = () => {
                         </div>
                     </Link>
 
-                    {/* RIGHT: Recognition & Actions - Bold Black Look */}
                     <div className="flex items-center gap-6 xl:gap-10 h-full">
 
-                        {/* Recognition Block (Hidden on Tablet/Mobile) */}
                         <div className="hidden xl:flex items-center gap-8 border-l-2 border-slate-100 pl-10 h-20">
                             <div className="text-right flex flex-col justify-center">
                                 <p className="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-1">
@@ -78,7 +73,6 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* CTA Section */}
                         <div className="hidden md:flex items-center gap-4">
                             <Link
                                 href="https://hushsga-final.vercel.app/register"
@@ -88,7 +82,6 @@ const Navbar = () => {
                             </Link>
                         </div>
 
-                        {/* Mobile Toggle */}
                         <button
                             className="lg:hidden p-2 text-slate-950"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -99,12 +92,10 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* SubNavbar (Maintained Desktop View) */}
             <div className="hidden lg:block">
                 <SubNavbar />
             </div>
 
-            {/* Mobile Menu Overlay */}
             <div
                 className={`lg:hidden fixed inset-0 top-20 md:top-24 z-[90] bg-white transition-all duration-300 ${isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
                     }`}
