@@ -4,11 +4,7 @@ import React from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import {
     Calendar, Newspaper, ArrowRight, Tag, Bell,
-    BookOpen, Globe, Activity, Trophy, Users,
-    ClipboardCheck, CalendarRange, Star, Target,
-    Lightbulb, Zap, Shield, Sparkles, CheckCircle2,
-    Briefcase, GraduationCap, Heart, HelpCircle,
-    Info, Layout, MessageSquare, PenTool, Search
+    Search, Info, BookOpen, Globe, Activity, Trophy, Users, Target
 } from "lucide-react";
 
 const BlogsPage = () => {
@@ -37,63 +33,25 @@ const BlogsPage = () => {
             category: "Training",
             excerpt: "A new module focusing on digital literacy and online safety for junior scouts was launched during the winter camp session.",
             content: "In alignment with the modern challenges of the 21st century, HSGA Telangana has successfully launched the 'Digital Citizenship' module under the Praveshika training program. This initiative aims to educate young scouts about safe internet practices, cyber-bullying awareness, and the responsible use of social media. The program includes interactive workshops led by IT experts and senior scouts. By the end of this year, we aim to certify over 10,000 scouts in basic digital safety, ensuring they are as prepared online as they are in the outdoors."
+        },
+        {
+            id: 101,
+            title: "Sustainable Development Goals: Mission 2030",
+            date: "Mar 04, 2026",
+            category: "Mission 2030",
+            excerpt: "How HSGA Telangana is mobilizing scouts to solve global challenges through direct local community action and environmental stewardship.",
+            content: "Our commitment to the Sustainable Development Goals (SDGs) is at the core of our scouting mission. For 2025-26, we have identified primary focus areas: SDG 1 (No Poverty) through service to weaker sections, SDG 3 (Good Health) through state-wide Yoga and First Aid workshops, and SDG 4 (Quality Education) through our non-formal badge system. Each scout lodge is recording impact metrics to contribute to the global 'Scouts for SDGs' initiative. By 2030, we aim to have 100% of our scouts engaged in at least three SDG-aligned projects annually."
+        },
+        {
+            id: 102,
+            title: "NEP 2020: Shaping Holistic Learners",
+            date: "Mar 04, 2026",
+            category: "Framework",
+            excerpt: "Integrating scouting into the National Education Policy framework to build intellectual, physical, and social skills through experiential education.",
+            content: "The National Education Policy (NEP) 2020 emphasizes holistic and experiential learning, a philosophy that has been the bedrock of scouting for over a century. HSGA Telangana is working closely with the State Education Department to integrate scouting credits into the formal curriculum. Our focus remains on vocational skills via the proficiency badge system, value-based education through the scout promise, and active citizenship. Through NEP 2020 alignment, we are ensuring that every child in Telangana has access to character-building opportunities that transcend the classroom."
         }
     ];
 
-    const categoryPrompts = [
-        {
-            title: "Scouting & NEP 2020",
-            icon: <BookOpen className="w-6 h-6" />,
-            color: "blue",
-            themes: ["Holistic Learning", "Experiential Education", "Value-based Growth"],
-            description: "How scouting aligns with the vision of the 2020 National Education Policy."
-        },
-        {
-            title: "UN Sustainable Development Goals",
-            icon: <Globe className="w-6 h-6" />,
-            color: "emerald",
-            themes: ["SDG 2030 Agenda", "Local Action", "Global Impact"],
-            description: "Mobilizing scouts to solve global challenges through local community service."
-        },
-        {
-            title: "Fit India Movement",
-            icon: <Activity className="w-6 h-6" />,
-            color: "orange",
-            themes: ["Physical Literacy", "Yoga & Wellness", "Active Lifestyle"],
-            description: "Encouraging a fit India through scouting hikes, sports, and outdoor adventure."
-        },
-        {
-            title: "Khelo India",
-            icon: <Trophy className="w-6 h-6" />,
-            color: "red",
-            themes: ["Grassroots Sports", "Indigenous Games", "Sporting Excellence"],
-            description: "Promoting traditional games and sportsmanship across rural and urban centers."
-        },
-        {
-            title: "National Youth Policy / MY Bharat",
-            icon: <Users className="w-6 h-6" />,
-            color: "indigo",
-            themes: ["Volunteerism", "Leadership", "Civic Participation"],
-            description: "Empowering the next generation through the My Bharat platform and NYP 2025."
-        },
-        {
-            title: "Viksit Bharat 2047",
-            icon: <Target className="w-6 h-6" />,
-            color: "amber",
-            themes: ["Future Skills", "National Building", "Inclusive Development"],
-            description: "Scouts as ambassadors for building a developed and self-reliant India by 2047."
-        }
-    ];
-
-    const sdgMapping = [
-        { goal: "SDG 1: No Poverty", activity: "Community service to weaker sections, widows, handicapped" },
-        { goal: "SDG 2: Zero Hunger", activity: "Food distribution drives, cooking skills at camp" },
-        { goal: "SDG 3: Good Health", activity: "First Aid training, Yoga, health camps" },
-        { goal: "SDG 4: Quality Education", activity: "Non-formal education, skill training, badge programs" },
-        { goal: "SDG 5: Gender Equality", activity: "Girl Guides programs, co-ed scouting" },
-        { goal: "SDG 13: Climate Action", activity: "Tree planting, environmental conservation" },
-        { goal: "SDG 16: Peace & Justice", activity: "Scout Promise, peace education, MoP" }
-    ];
 
     return (
         <div className="bg-white flex flex-col font-outfit text-slate-900 w-full relative">
@@ -101,21 +59,21 @@ const BlogsPage = () => {
 
             <div className="w-full">
                 {/* HERO SECTION */}
-                <div className="bg-[#000080] pt-20 pb-16 text-white relative overflow-hidden">
+                <div className="bg-[#000080] pt-14 pb-12 text-white relative overflow-hidden">
                     <div className="absolute inset-0 opacity-10 pointer-events-none">
                         <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: `radial-gradient(circle, #fff 0.8px, transparent 0.8px)`, backgroundSize: '24px 24px' }} />
                     </div>
                     <div className="max-w-[1500px] mx-auto px-6 relative z-10">
                         <div className="max-w-4xl">
-                            <div className="inline-flex items-center gap-3 mb-6 font-[1000]">
+                            <div className="inline-flex items-center gap-3 mb-4 font-[1000]">
                                 <span className="h-[1.5px] w-10 bg-orange-500"></span>
-                                <span className="text-white/70 text-[10px] uppercase tracking-[0.2em]">Official Blogs & Editorial HUB</span>
+                                <span className="text-white/70 text-[10px] uppercase tracking-[0.2em]">Official Blogs</span>
                             </div>
-                            <h1 className="text-4xl md:text-6xl font-[1000] mb-8 tracking-tighter leading-[1.1]">
+                            <h1 className="text-3xl md:text-5xl font-[1000] mb-5 tracking-tighter leading-[1.1]">
                                 Empowering Youth Through <br />
                                 <span className="text-orange-500">Shared Narratives.</span>
                             </h1>
-                            <p className="text-white/80 text-lg md:text-xl font-medium leading-relaxed max-w-2xl border-l-4 border-orange-600 pl-8">
+                            <p className="text-white/80 text-base md:text-lg font-medium leading-relaxed max-w-2xl border-l-4 border-orange-600 pl-8">
                                 From official administrative bulletins to student-led scouting stories, our blog is the heartbeat of HSGA Telangana's mission and impact.
                             </p>
                         </div>
@@ -123,7 +81,7 @@ const BlogsPage = () => {
                 </div>
 
                 {/* OFFICIAL BLOGS SECTION */}
-                <div className="max-w-[1500px] mx-auto px-6 py-20">
+                <div className="max-w-[1500px] mx-auto px-6 py-14">
                     <div className="flex items-end justify-between mb-12">
                         <div>
                             <span className="text-orange-600 text-[10px] font-black uppercase tracking-[0.3em] mb-4 block">Archive</span>
@@ -164,8 +122,8 @@ const BlogsPage = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-l border-slate-100 mb-32">
-                        {newsItems.slice(1).map((news) => (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-l border-slate-100 mb-24">
+                        {newsItems.slice(1, 3).map((news) => (
                             <div key={news.id}
                                 className="group bg-white p-10 border-r border-b border-slate-100 hover:border-orange-500 hover:z-10 transition-all duration-300 flex flex-col rounded-none cursor-pointer"
                                 onClick={() => setSelectedNews(news)}>
@@ -200,156 +158,50 @@ const BlogsPage = () => {
                         ))}
                     </div>
 
-                    {/* CONSOLIDATED EDITORIAL HUB CARD */}
-                    <div className="bg-slate-50 border border-slate-200 p-6 md:p-12 lg:p-20 relative overflow-hidden shadow-sm">
-                        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#000080]/[0.02] -skew-x-12 pointer-events-none" />
-
-                        <div className="relative z-10">
-                            {/* VISION & MASTER PROMPT */}
-                            <div className="max-w-4xl mb-20">
-                                <div className="flex items-center gap-4 mb-8">
-                                    <PenTool className="w-8 h-8 text-orange-600" />
-                                    <h2 className="text-3xl md:text-5xl font-[1000] text-[#000080] tracking-tighter uppercase">Editorial <span className="text-orange-600">Hub</span></h2>
-                                </div>
-                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                                    <div>
-                                        <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-4">Editorial Vision</h3>
-                                        <p className="text-slate-600 text-base font-medium leading-relaxed">
-                                            We invite scouts, guides, and leaders to share their transformative journeys. Our blog aims to highlight how scouting directly contributes to India's national missions and global goals.
-                                        </p>
-                                    </div>
-                                    <div className="bg-white p-8 border-l-8 border-orange-600 shadow-xl group">
-                                        <Sparkles className="w-8 h-8 text-orange-600/20 mb-4 group-hover:scale-110 transition-transform duration-500" />
-                                        <h3 className="text-[10px] font-black text-[#000080] uppercase tracking-widest mb-3 italic">The Master Prompt</h3>
-                                        <blockquote className="text-lg md:text-xl font-[1000] text-[#000080] leading-tight tracking-tight">
-                                            "Write engaging, informative, and SEO-optimized posts that showcase how scouting delivers on National Missions and the Global SDGs."
-                                        </blockquote>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* CATEGORY GRID */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
-                                {categoryPrompts.map((cat, idx) => (
-                                    <div key={idx} className="bg-white p-8 border border-slate-100 hover:border-orange-500 transition-all duration-300 group">
-                                        <div className={`w-12 h-12 bg-slate-50 flex items-center justify-center mb-6 group-hover:bg-orange-600 group-hover:text-white transition-all duration-500`}>
-                                            {cat.icon}
-                                        </div>
-                                        <h4 className="text-lg font-black text-[#000080] uppercase tracking-tight mb-3 group-hover:text-orange-600 transition-colors">
-                                            {cat.title}
-                                        </h4>
-                                        <p className="text-slate-500 text-xs font-medium leading-relaxed mb-6">
-                                            {cat.description}
-                                        </p>
-                                        <div className="flex flex-wrap gap-2 text-[8px] font-black uppercase tracking-widest text-slate-400">
-                                            {cat.themes.map((theme, tIdx) => (
-                                                <span key={tIdx} className="px-2 py-1 bg-slate-50 border border-slate-100">{theme}</span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-
-                            {/* ACTION MATRIX & ALIGNMENT */}
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-                                <div className="bg-white p-8 md:p-10 border border-slate-200">
-                                    <div className="flex items-center gap-4 mb-8">
-                                        <Globe className="w-6 h-6 text-emerald-600" />
-                                        <h3 className="text-xl font-black text-[#000080] uppercase tracking-tight">SDG Action Matrix</h3>
-                                    </div>
-                                    <div className="overflow-x-auto">
-                                        <table className="w-full text-left">
-                                            <thead>
-                                                <tr className="border-b-2 border-slate-200">
-                                                    <th className="py-3 text-[9px] font-black uppercase tracking-widest text-slate-400">SDG Goal</th>
-                                                    <th className="py-3 text-[9px] font-black uppercase tracking-widest text-slate-400">Scouting Activity</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody className="divide-y divide-slate-50">
-                                                {sdgMapping.map((item, i) => (
-                                                    <tr key={i} className="hover:bg-slate-50 transition-colors">
-                                                        <td className="py-4 pr-4 font-black text-[#000080] text-[11px] uppercase">{item.goal}</td>
-                                                        <td className="py-4 text-slate-600 text-[11px] font-medium leading-tight">{item.activity}</td>
-                                                    </tr>
-                                                ))}
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-
-                                <div className="bg-[#000080] text-white p-8 md:p-10 relative overflow-hidden">
-                                    <Target className="absolute -right-6 -bottom-6 w-48 h-48 text-white/5 pointer-events-none" />
-                                    <h3 className="text-xl font-black mb-8 uppercase tracking-tight">Government Alignment</h3>
-                                    <div className="space-y-5">
-                                        {[
-                                            { name: "Swachh Bharat", desc: "Cleanliness drives & waste management awareness." },
-                                            { name: "Skill India", desc: "Vocational badge system & technical skills." },
-                                            { name: "Beti Bachao Beti Padhao", desc: "Empowering Girl Guides and promoting education." },
-                                            { name: "Ek Bharat Shreshtha Bharat", desc: "Cultural exchange & national integration." },
-                                            { name: "Digital India", desc: "Digital modules & online literacy." }
-                                        ].map((scheme, i) => (
-                                            <div key={i} className="border-l-2 border-white/10 pl-5 hover:border-orange-500 transition-colors">
-                                                <h4 className="font-black text-orange-500 uppercase text-[10px] tracking-widest mb-1">{scheme.name}</h4>
-                                                <p className="text-white/60 text-[11px] font-medium leading-snug">{scheme.desc}</p>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* FOOTER: GUIDELINES & CALENDAR */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                <div className="bg-white p-8 border border-slate-200">
-                                    <div className="flex items-center gap-3 mb-6">
-                                        <ClipboardCheck className="w-5 h-5 text-orange-600" />
-                                        <h4 className="text-sm font-black text-[#000080] uppercase tracking-tight">Writing Guidelines</h4>
-                                    </div>
-                                    <ul className="space-y-3">
-                                        {[
-                                            "Word Count: 800–1500 words",
-                                            "Tone: Informative & Inspiring",
-                                            "Visuals: Use real HSGA event photos",
-                                            "Language: English + Telugu",
-                                            "SEO: Key phrase 'HSGA Telangana'"
-                                        ].map((guide, i) => (
-                                            <li key={i} className="flex items-start gap-2 text-[10px] font-bold text-slate-500 uppercase">
-                                                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 mt-0.5" />
-                                                {guide}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-
-                                <div className="bg-[#000080] p-8 text-white">
-                                    <div className="flex items-center gap-3 mb-6">
-                                        <CalendarRange className="w-5 h-5 text-orange-500" />
-                                        <h4 className="text-sm font-black uppercase tracking-tight">Editorial Calendar</h4>
-                                    </div>
-                                    <div className="space-y-4">
-                                        {[
-                                            { w: "WK 1", t: "NEP 2020 Integration" },
-                                            { w: "WK 2", t: "SDG Activity Report" },
-                                            { w: "WK 3", t: "Fit India / Khelo India" },
-                                            { w: "WK 4", t: "Event Recap / Int'l News" }
-                                        ].map((item, i) => (
-                                            <div key={i} className="flex items-center justify-between border-b border-white/5 pb-2">
-                                                <span className="text-[9px] font-black text-orange-500 uppercase">{item.w}</span>
-                                                <span className="text-xs font-medium text-white/70">{item.t}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                <div className="bg-slate-100 p-8 flex flex-col justify-center text-center">
-                                    <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-2">Editorial Notice</p>
-                                    <p className="text-slate-500 text-[10px] font-medium italic leading-relaxed">
-                                        Aligned with India's 2047 vision and the UN 2030 Agenda.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    {/* ALIGNMENT PILLARS - SDG & NEP (Styled like Blog Cards) */}
+                    <div className="mb-12">
+                        <span className="text-orange-600 text-[10px] font-black uppercase tracking-[0.3em] mb-4 block">Our Commitment</span>
+                        <h2 className="text-3xl font-[1000] text-[#000080] tracking-tight uppercase">National & Global Alignment</h2>
                     </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 border-t border-l border-slate-100">
+                        {newsItems.slice(3).map((news) => (
+                            <div key={news.id}
+                                className="group bg-white p-10 border-r border-b border-slate-100 hover:border-orange-500 hover:z-10 transition-all duration-300 flex flex-col rounded-none cursor-pointer"
+                                onClick={() => setSelectedNews(news)}>
+                                <div className="flex items-center justify-between mb-8">
+                                    <span className="px-3 py-1 bg-orange-50 text-orange-600 text-[9px] font-black uppercase tracking-widest border border-orange-100 rounded-none">
+                                        {news.category}
+                                    </span>
+                                    <div className="flex items-center gap-1.5 text-slate-400 text-[11px] font-bold">
+                                        <Globe className="w-3.5 h-3.5 text-orange-600" />
+                                        Framework 2025
+                                    </div>
+                                </div>
+
+                                <h3 className="text-xl font-black text-[#000080] mb-6 tracking-tight leading-tight uppercase group-hover:text-orange-600 transition-colors">
+                                    {news.title}
+                                </h3>
+
+                                <p className="text-gray-500 text-sm font-medium leading-relaxed mb-8 line-clamp-4">
+                                    {news.excerpt}
+                                </p>
+
+                                <div className="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-2 h-2 bg-orange-600 rotate-45" />
+                                        <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Vision Doc</span>
+                                    </div>
+                                    <button className="text-[10px] font-black text-orange-600 uppercase tracking-widest hover:text-[#000080] transition-colors flex items-center gap-2">
+                                        Read Document <ArrowRight className="w-3 h-3" />
+                                    </button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
                 </div>
+
             </div>
 
             {/* FULL BLOG OVERLAY - WIKI REDESIGN */}
@@ -491,8 +343,9 @@ const BlogsPage = () => {
                         </button>
                     </div>
                 </div>
-            )}
-        </div>
+            )
+            }
+        </div >
     );
 };
 
