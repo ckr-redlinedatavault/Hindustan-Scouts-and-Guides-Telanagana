@@ -1,13 +1,13 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://hsgatelangana.com'; // Official base URL
+    const baseUrl = 'https://hsgatelangana.com';
 
     return {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: ['/admin/', '/private/'], // Example disallowed paths
+            disallow: ['/admin/', '/private/'],
         },
         sitemap: `${baseUrl}/sitemap.xml`,
     };

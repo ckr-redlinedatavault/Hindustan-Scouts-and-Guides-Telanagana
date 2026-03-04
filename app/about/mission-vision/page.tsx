@@ -80,7 +80,6 @@ const MissionVisionPage = () => {
         <div className="bg-white flex flex-col font-sans text-slate-900 w-full">
             <Breadcrumbs />
 
-            {/* HERO SECTION */}
             <section className="relative pt-14 pb-14 bg-[#000080] overflow-hidden">
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
                     style={{ backgroundImage: 'radial-gradient(#fff 0.5px, transparent 0.5px)', backgroundSize: '30px 30px' }} />
@@ -105,7 +104,6 @@ const MissionVisionPage = () => {
                 </div>
             </section>
 
-            {/* MISSION SECTION */}
             <section className="py-20 border-b border-gray-100 bg-white">
                 <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
@@ -152,7 +150,6 @@ const MissionVisionPage = () => {
                 </div>
             </section>
 
-            {/* VISION SECTION */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
@@ -199,7 +196,6 @@ const MissionVisionPage = () => {
                 </div>
             </section>
 
-            {/* THE FOUR-FOLD AIMS */}
             <section className="py-20 bg-white">
                 <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
                     <div className="flex flex-col items-center text-center mb-16">
@@ -251,7 +247,6 @@ const MissionVisionPage = () => {
                 </div>
             </section>
 
-            {/* FUNDAMENTALS & CORE VALUES */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
