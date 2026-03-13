@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopBanner from "@/components/TopBanner";
+import ScrollingTicker from "@/components/ScrollingTicker";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BottomBanner from "@/components/BottomBanner";
@@ -80,6 +81,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
+        <ScrollingTicker />
         <TopBanner />
         <Navbar />
         <main className="flex-grow w-full">

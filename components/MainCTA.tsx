@@ -40,7 +40,7 @@ const MainCTA = () => {
 
                     <div className="flex flex-wrap items-center gap-6">
                         <Link
-                            href="https://hushsga-final.vercel.app/register"
+                            href="https://hus.hsgatelangana.com/membership"
                             className="group flex items-center gap-3 bg-slate-950 text-white px-8 py-4 transition-all hover:bg-white hover:text-[#e65100] rounded-sm shadow-xl shadow-black/10"
                         >
                             <span className="font-bold text-[14px]">Register as a Scout</span>
@@ -48,7 +48,7 @@ const MainCTA = () => {
                         </Link>
 
                         <Link
-                            href="https://hushsga-final.vercel.app/volunteer"
+                            href="https://hus.hsgatelangana.com/volunteer"
                             className="group flex items-center gap-3 bg-white text-slate-900 px-8 py-4 transition-all hover:bg-slate-950 hover:text-white rounded-sm shadow-xl shadow-black/5"
                         >
                             <span className="font-bold text-[14px]">Become a Volunteer</span>

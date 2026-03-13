@@ -6,8 +6,6 @@ import { ChevronRight, ArrowRight, ChevronLeft } from "lucide-react";
 
 const Hero = () => {
     const images = [
-        "https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772204710/Screenshot_2026-02-27_at_20.31.37_cmgeog.png",
-        "https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772206077/Screenshot_2026-02-27_at_20.57.08_qib3cv.png",
         "https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772204692/WhatsApp_Image_2026-02-27_at_19.54.43_uze4oz.jpg",
         "https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772204691/WhatsApp_Image_2026-02-27_at_19.54.42_u1c9sz.jpg",
         "https://res.cloudinary.com/dsqqrpzfl/image/upload/v1772206304/Screenshot_2026-02-27_at_21.01.21_bgxf3h.png"

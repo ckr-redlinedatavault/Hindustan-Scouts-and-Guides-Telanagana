@@ -30,7 +30,7 @@ export const navLinks = [
             { name: "Prashiksham Yojana", href: "/prashiksham", desc: "Our standardized training methodology." },
             { name: "Resources & Docs", href: "/resources", desc: "Access official forms and circulars." },
             { name: "Image Gallery", href: "/gallery", desc: "Archives of past events and milestones." },
-            { name: "Public Notices", href: "https://hindustan-unified-systems.vercel.app/documents", desc: "Recent updates and announcements." }
+            { name: "Public Notices", href: "https://hus.hsgatelangana.com/documents", desc: "Recent updates and announcements." }
         ]
     },
     { name: "Blogs", href: "/blogs" },

@@ -60,8 +60,8 @@ export default function SitemapPage() {
         {
             category: "External Systems",
             links: [
-                { name: "Registration Portal", href: "https://hushsga-final.vercel.app/register", icon: ExternalLink, desc: "Official student enrollment system (External)." },
-                { name: "Donation Portal", href: "https://hushsga-final.vercel.app/donate", icon: ExternalLink, desc: "Support scouting through the leadership fund (External)." },
+                { name: "Registration Portal", href: "https://hus.hsgatelangana.com/membership", icon: ExternalLink, desc: "Official student enrollment system (External)." },
+                { name: "Donation Portal", href: "https://hus.hsgatelangana.com/donate", icon: ExternalLink, desc: "Support scouting through the leadership fund (External)." },
             ]
         }
     ];

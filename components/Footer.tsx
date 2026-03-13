@@ -18,7 +18,7 @@ const Footer = () => {
                 { name: "Mission and vision", href: "/about/mission-vision" },
                 { name: "Blogs and portal", href: "/blogs" },
                 { name: "Success stories", href: "/#success-stories" },
-                { name: "Donate now", href: "https://hushsga-final.vercel.app/donate" },
+                { name: "Donate now", href: "https://hus.hsgatelangana.com/donate" },
             ]
         },
         {
@@ -28,7 +28,7 @@ const Footer = () => {
                 { name: "Image gallery", href: "/gallery" },
                 { name: "Documents hub", href: "/resources" },
                 { name: "Sitemap", href: "/site-map" },
-                { name: "Contact support", href: "https://hushsga-final.vercel.app/contact" }
+                { name: "Contact support", href: "https://hus.hsgatelangana.com/contact" }
             ]
         },
     ];

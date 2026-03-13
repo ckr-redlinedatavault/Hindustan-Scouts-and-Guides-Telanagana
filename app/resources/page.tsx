@@ -12,7 +12,7 @@ const resources = [
     {
         category: "Application Forms",
         items: [
-            { title: "Student Registration Form", size: "Online", format: "LINK", date: "2026", href: "https://hushsga-final.vercel.app/register", isLink: true },
+            { title: "Student Registration Form", size: "Online", format: "LINK", date: "2026", href: "https://hus.hsgatelangana.com/membership", isLink: true },
             { title: "Membership Registration Form", size: "765 KB", format: "DOCX", date: "2026", href: "/documents/membership.docx" },
             { title: "Volunteer Application Form", size: "16 KB", format: "DOCX", date: "2026", href: "/documents/volunteer.docx" },
             { title: "Unit Registration Form", size: "715 KB", format: "DOCX", date: "2026", href: "/documents/Unit Registration Form.docx" },

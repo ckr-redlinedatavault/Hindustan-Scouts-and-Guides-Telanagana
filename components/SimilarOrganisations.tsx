@@ -33,6 +33,12 @@ const SimilarOrganisations = () => {
             logo: "https://res.cloudinary.com/dsqqrpzfl/image/upload/v1770925657/Screenshot_2026-02-13_at_01.17.12-removebg-preview_q9a7cz.png",
             href: "https://wfis.world/",
             alt: "WFIS World Official Website"
+        },
+        {
+            name: "Organization Collaboration",
+            logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH8qoEvO462pa50drevMf2kxDUWvvgP5GEWg&s",
+            href: "#",
+            alt: "Related Organization"
         }
     ];
 

@@ -99,7 +99,7 @@ const ContactPage = () => {
                                 <p className="text-white/70 text-xs font-medium">Send us a direct message for quick resolution.</p>
                             </div>
                             <a
-                                href="https://hushsga-final.vercel.app/contact"
+                                href="https://hus.hsgatelangana.com/contact"
                                 className="px-6 py-3 bg-white text-[#000080] rounded-xl font-black text-[10px] uppercase tracking-[0.2em] hover:bg-slate-100 transition-all flex items-center gap-2 whitespace-nowrap"
                             >
                                 Send Message

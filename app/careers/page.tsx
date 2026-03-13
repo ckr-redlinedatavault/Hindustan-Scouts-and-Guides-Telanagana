@@ -47,7 +47,7 @@ const CareersPage = () => {
                             All career, volunteer, and leadership opportunities are now centrally managed through our new digital ecosystem. Please visit the Unified Systems portal to view open positions and submit applications.
                         </p>
                         <a
-                            href="https://hushsga-final.vercel.app/careers"
+                            href="https://hus.hsgatelangana.com/careers"
                             className="inline-flex items-center gap-3 px-8 py-4 bg-[#000080] text-white text-[11px] font-black uppercase tracking-widest hover:bg-orange-600 transition-all shadow-lg shadow-[#000080]/20"
                         >
                             Go to HSGA Unified Systems

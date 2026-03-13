@@ -29,11 +29,11 @@ const Navbar = () => {
                         />
 
                         <div className="flex flex-col justify-center">
-                            <h1 className="text-[11px] sm:text-base md:text-xl lg:text-[24px] font-black text-slate-950 tracking-tighter uppercase whitespace-nowrap leading-none">
+                            <h1 className="text-[11px] sm:text-base md:text-xl lg:text-[24px] font-black text-slate-950 tracking-tighter whitespace-nowrap leading-none">
                                 Hindustan Scouts and Guides Association
                             </h1>
                             <div className="flex items-center gap-3 mt-1.5">
-                                <span className="text-orange-600 font-black text-[10px] md:text-sm tracking-[0.25em] uppercase">
+                                <span className="text-orange-600 font-black text-[10px] md:text-sm tracking-[0.25em]">
                                     Telangana State Headquarters
                                 </span>
                             </div>
@@ -44,10 +44,10 @@ const Navbar = () => {
 
                         <div className="hidden xl:flex items-center gap-8 border-l-2 border-slate-100 pl-10 h-20">
                             <div className="text-right flex flex-col justify-center">
-                                <p className="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-1">
+                                <p className="text-[11px] font-black text-slate-400 tracking-widest mb-1">
                                     Recognized By
                                 </p>
-                                <p className="text-[13px] font-black text-slate-950 uppercase leading-none">
+                                <p className="text-[13px] font-black text-slate-950 leading-none">
                                     Govt. of India
                                 </p>
                                 <p className="text-[10px] font-bold text-slate-500 uppercase mt-1">
@@ -75,7 +75,7 @@ const Navbar = () => {
 
                         <div className="hidden md:flex items-center gap-4">
                             <Link
-                                href="https://hushsga-final.vercel.app/register"
+                                href="https://hus.hsgatelangana.com/volunteer"
                                 className="px-8 py-4 bg-slate-950 text-white text-[12px] font-black uppercase tracking-widest hover:bg-orange-600 transition-all rounded-none shadow-xl shadow-slate-950/10"
                             >
                                 Join now
@@ -116,7 +116,7 @@ const Navbar = () => {
 
                     <div className="mt-auto pb-12">
                         <Link
-                            href="https://hushsga-final.vercel.app/register"
+                            href="https://hus.hsgatelangana.com/membership"
                             className="block w-full py-5 bg-slate-950 text-white text-center font-black uppercase tracking-widest text-sm rounded-none"
                         >
                             Membership Registration
